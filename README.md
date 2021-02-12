@@ -1,4 +1,4 @@
-# react-native-basic
+# reactnativebasic
 
 # Comandos básicos
 ```bash
@@ -11,5 +11,9 @@ npx react-native init nomeApp
 npx react-native run-android 
 
 # Rodar projeto no emulador IOS
-npx react-native run-ios 
+npx react-native run-ios
+
+# Generate Android and IOS Folder 
+yarn add react-native-eject
+npx react-native eject
 ```
