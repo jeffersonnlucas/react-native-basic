@@ -4,12 +4,11 @@
 Aqui você vai encontrar um código basico para criação de apps com react-native, nele é possivel ver a utilização de campos Text, TextInput e Button além da utilização de componentes e a passagem de parametros entre campos de uma mesma tela através da ação do botão.
 
 # Requisitos
-    
-    1. [Instalar Android Studio](https://developer.android.com/studio/install/)
-    2. [Instalar Node.js](https://nodejs.org/pt-br/download/)
-    3. [Instalar Phython 2](https://www.python.org/downloads/release/python-2718/)
-    4. [Instalar JDK 8](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html)
-    5. [Instalar Visual Studio Code](https://code.visualstudio.com/)
+1. [Instalar Android Studio](https://developer.android.com/studio/install/)
+2. [Instalar Node.js](https://nodejs.org/pt-br/download/)
+3. [Instalar Phython 2](https://www.python.org/downloads/release/python-2718/)
+4. [Instalar JDK 8](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html)
+5. [Instalar Visual Studio Code](https://code.visualstudio.com/)
 
 # Como rodar esse projeto
 ```bash
