@@ -14,9 +14,13 @@ Aqui você vai encontrar um código basico para criação de apps com react-nati
 ```bash
 # Inicializar um projeto
 $ git clone git@github.com:jeffersonnlucas/react-native-basic.git
+$ cd react-native-basic
 $ yarn install 
 $ yarn add react-native-eject
 $ npx react-native eject
+$ npx react-native run-android
+
+#Lembre-se sempre, antes de usar o comando para rodar o aplicativo precisa estar com o Emulador aberto e ai sim rodar o comando.
 ```
 
 # Comandos básicos
@@ -24,11 +28,11 @@ $ npx react-native eject
 #Lembre-se sempre, antes de usar o comando para rodar o aplicativo precisa estar com o Emulador aberto e ai sim rodar o comando.
 
 # Comando utilizado para inicializar um novo projeto
-npx react-native init nomeApp
+$ npx react-native init nomeApp
 
 # Rodar projeto no emulador Android
-npx react-native run-android 
+$ npx react-native run-android 
 
 # Rodar projeto no emulador IOS
-npx react-native run-ios
+$ npx react-native run-ios
 ```
