@@ -1,38 +1,33 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TextInput } from 'react-native';
 
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.background}>
-        <View style={styles.background1}></View>
-        <View style={styles.background2}></View>
-        <View style={styles.background3}></View>
+      <View style={styles.container}>
+
+        <TextInput style={styles.input} />
+
+        <Text></Text>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  background: {
+  container: {
     flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center'
   },
-  background1: {
-    width: 50,
-    height: 50,
-    backgroundColor: 'green'
+  input: {
+    height: 45,
+    borderWidth: 1,
+    borderColor: '#222',
+    margin: 10,
+    fontSize: 20,
+    padding: 10
   },
-  background2:{
-    width: 50,
-    height: 50,
-    backgroundColor: 'red'
-  },
-  background3:{
-    width: 50,
-    height: 50,
-    backgroundColor: 'yellow'
+  text: {
+    textAlign: 'center',
+    fontSize: 25
   }
 });
