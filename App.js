@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      nome: ""
+      nome: "",
+      input: ""
     };
 
-    this.getText = this.getText.bind(this);
+    this.signin = this.signin.bind(this);
   }
 
-  getText(text) {
-    if (text.length > 0) {
-      this.setState({ nome: "Bem vindo: " + text });
-    } else {
-      this.setState({ nome: '' });
+  signin() {
+    if (this.state.input == '') {
+      alert('Digite seu nome!');
+      return
     }
+    
+    this.setState({ nome: 'Bem vindo: ' + this.state.input })
   }
 
   render() {
@@ -27,7 +29,9 @@ export default class App extends Component {
           style={styles.input}
           placeholder="Digite seu nome."
           underlineColorAndroid='transparent'
-          onChangeText={this.getText} />
+          onChangeText={(text) => this.setState({ input: text })} />
+
+        <Button title="Entrar" onPress={this.signin} />
 
         <Text style={styles.text}>
           {this.state.nome}
