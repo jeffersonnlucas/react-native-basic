@@ -10,9 +10,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-picker/picker": "^1.9.11",
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-eject": "^0.1.2"
+    "react-native-eject": "^0.1.2",
+    "react-native-picker": "^4.3.7"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
