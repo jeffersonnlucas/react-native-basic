@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Text, TextInput, TouchableOpacity, Keyboard } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import HttpRequestSample from './src/samples/HttpRequestSample';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
-
+    this.state = {};
   };
 
   render() {
-    return (
-      <View style={styles.container}>
-      </View>
-    );
+      return(
+        <View style={styles.container}>
+          <HttpRequestSample />
+        </View>
+      );
   }
 }
 
