@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
-import PickerSample from './src/Samples/PickerSample';
+import SliderSample from './src/Samples/SliderSample';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      valor: 35
     };
   };
 
   render() {
     return (
       <View style={styles.container}>
-        <PickerSample />
+        <SliderSample />
       </View>
     );
   }
@@ -22,7 +22,7 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 20,
+    marginTop: 15,
   }
 });
 
