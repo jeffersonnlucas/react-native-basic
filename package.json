@@ -12,10 +12,12 @@
   "dependencies": {
     "@react-native-community/slider": "^3.0.3",
     "@react-native-picker/picker": "^1.9.11",
+    "formik": "^2.2.6",
     "react": "16.13.1",
     "react-native": "0.63.4",
     "react-native-eject": "^0.1.2",
-    "react-native-picker": "^4.3.7"
+    "react-native-picker": "^4.3.7",
+    "yup": "^0.32.8"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
