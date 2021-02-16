@@ -10,7 +10,7 @@ import {
 } from 'react-native'
 import { Formik, Field } from 'formik'
 import * as yup from 'yup'
-import FormValidateSample from '../Samples/FormValidateSample'
+import FormValidateSample from '../samples/FormValidateSample'
 
 class Cadastro extends Component {
     constructor(props) {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Text, TextInput, TouchableOpacity, Keyboard } from 'react-native';
-import AsyncStorageSample from './src/Samples/AsyncStorageSample';
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +12,6 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <AsyncStorageSample />
       </View>
     );
   }

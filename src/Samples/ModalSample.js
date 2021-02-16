@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Text, Button, Modal } from 'react-native';
-import Entrar from '../View/Entrar';
+import Entrar from '../views/entrar';
 
 class ModalSample extends Component {
   constructor(props) {
