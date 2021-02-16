@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 
+/**
+ * https://github.com/react-native-picker/picker
+ * 
+ * npm install @react-native-picker/picker​
+ * 
+ * import {Picker} from '@react-native-picker/picker'
+ */
 class PickerSample extends Component {
     constructor(props) {
       super(props);
