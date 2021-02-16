@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import SliderSample from './src/Samples/SliderSample';
+import SwitchSample from './src/Samples/SwitchSample';
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <SliderSample />
+        <SwitchSample />
       </View>
     );
   }
