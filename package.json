@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.13.4",
     "@react-native-community/slider": "^3.0.3",
     "@react-native-picker/picker": "^1.9.11",
     "formik": "^2.2.6",

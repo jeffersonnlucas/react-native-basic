@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Text, Button } from 'react-native';
-import ModalSample from './src/Samples/ModalSample';
+import { View, StyleSheet, Text, TextInput, TouchableOpacity, Keyboard } from 'react-native';
+import AsyncStorageSample from './src/Samples/AsyncStorageSample';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalVisivel: false
     };
 
-    this.exibir = this.modal.bind(this);
   };
-
-  modal(visivel) {
-    this.setState({ modalVisivel: visivel });
-  }
 
   render() {
     return (
       <View style={styles.container}>
-        <ModalSample />
+        <AsyncStorageSample />
       </View>
     );
   }
