@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
 
-class ScrollViewComponent extends Component {
+class ScrollViewSample extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -74,4 +74,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default ScrollViewComponent;
+export default ScrollViewSample;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
 
-class FormInputComponent extends Component {
+class FormInputSample extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -59,4 +59,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default FormInputComponent;
+export default FormInputSample;
