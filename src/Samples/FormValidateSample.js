@@ -1,28 +1,60 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { Text, TextInput, StyleSheet, View } from 'react-native';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      valor: 35
+class FormValidateSample extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
     };
-  };
 
-  render() {
-    return (
-      <View style={styles.container}>
-        
-      </View>
-    );
-  }
+    render() {
+        const {
+            field: { name, onBlur, onChange, value },
+            form: { errors, touched, setFieldTouched },
+            ...inputProps
+        } = this.props;        
+
+        const hasError = errors[name] && touched[name]
+
+        return (
+            <>
+                <TextInput
+                    style={[styles.textInput, hasError && styles.errorInput]}
+                    value={value}
+                    onChangeText={(text) => onChange(name)(text)}
+                    onBlur={() => {
+                        setFieldTouched(name)
+                        onBlur(name)
+                    }}
+                    {...inputProps}
+                />
+                {hasError && <Text style={styles.errorText}>{errors[name]}</Text>}
+            </>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 15,
-  }
+    container: {
+        flex: 1,
+        marginTop: 15,
+    },
+    textInput: {
+        height: 40,
+        width: '100%',
+        margin: 10,
+        backgroundColor: 'white',
+        borderColor: 'gray',
+        borderWidth: StyleSheet.hairlineWidth,
+        borderRadius: 10,
+    },
+    errorText: {
+        fontSize: 10,
+        color: 'red',
+    },
+    errorInput: {
+        borderColor: 'red',
+    }
 });
 
-export default App;
+export default FormValidateSample;
